@@ -74,12 +74,12 @@ Clone the repository and navigate to the project folder:
 git clone https://github.com/joycemsm/etl-pipeline-bitcoin.git
 cd etl-pipeline-bitcoin 
 
-2. **Install project dependencies:
+2. Install project dependencies:
 
 ```bash
 poetry install
 
-3. **Create a .env file in the root (for PostgreSQL ETL) with your database credentials:
+3. Create a .env file in the root (for PostgreSQL ETL) with your database credentials:
 
 DB_NAME=your_db_name
 DB_USER=your_user
@@ -87,7 +87,7 @@ DB_PASSWORD=your_password
 DB_HOST=localhost
 DB_PORT=5432
 
-4. **Run the ETL pipeline:
+4. Run the ETL pipeline:
 ```bash
 poetry run python src/pipeline01.py
 
