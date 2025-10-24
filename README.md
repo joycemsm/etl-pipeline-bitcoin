@@ -64,58 +64,28 @@ The pipeline follows these steps, reflecting the scripts in this repository:
 
 ---
 
-## 🛠 How to Run
+## How to Run
 
 1. **Clone the repository**
+   
+Clone the repository and navigate to the project folder:
 
-```bash
 git clone https://github.com/joycemsm/etl-pipeline-bitcoin.git
 cd etl-pipeline-bitcoin
-Install dependencies
 
-bash
-Copy code
+Install project dependencies:
+
 poetry install
-Configure environment variables
 
-Create a .env file in the project root with PostgreSQL credentials:
+Create a .env file in the root (for PostgreSQL ETL) with your database credentials:
 
-text
-Copy code
 DB_NAME=your_db_name
 DB_USER=your_user
 DB_PASSWORD=your_password
 DB_HOST=localhost
 DB_PORT=5432
-Only needed for the PostgreSQL ETL version.
 
-Run the ETL pipeline
-
-PostgreSQL version:
-
-bash
-Copy code
-poetry run python src/postgres_pipeline.py
-TinyDB version (optional):
-
-bash
-Copy code
-poetry run python src/tinydb_pipeline.py
-The pipeline collects Bitcoin prices continuously every 12 seconds.
-
-Optional: Run Streamlit dashboard
-
-bash
-Copy code
-poetry run streamlit run src/dashboard.py
-The dashboard auto-refreshes and shows the latest BTC price, timestamp, and delta.
-
-Stop the pipeline
-
-Press Ctrl + C in each terminal to stop the ETL or dashboard.
-
-🛡 Security
-Sensitive information (like database credentials) is stored in the .env file and excluded from version control via .gitignore.
-
+Run the ETL pipeline:
+poetry run python src/pipeline01.py
 
 
