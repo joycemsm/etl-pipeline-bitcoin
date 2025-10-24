@@ -76,7 +76,6 @@ cd etl-pipeline-bitcoin
 
 2. Install project dependencies:
 
-```bash
 poetry install
 
 3. Create a .env file in the root (for PostgreSQL ETL) with your database credentials:
