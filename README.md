@@ -80,6 +80,7 @@ poetry install
 
 3. Create a .env file in the root (for PostgreSQL ETL) with your database credentials:
 
+```env
 DB_NAME=your_db_name
 DB_USER=your_user
 DB_PASSWORD=your_password
