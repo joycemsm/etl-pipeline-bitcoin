@@ -97,7 +97,7 @@ if __name__ == "__main__":
     # Creat table on initialization
     create_table()
 
-    # Manin loop
+    # Man loop
     try:
         while True:
             data = extract_bitcoin_data()
